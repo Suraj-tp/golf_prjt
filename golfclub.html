@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d4a2e3e98f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="golfclub.css">
+</head>
+
+<body>
+    <div class="golf">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-info bg-gradient "  >
+                        <div class="container-fluid">
+
+                            <div class="logo">
+                                <a class="navbar-brand" href="#"><img
+                                        src="./golf images/2f8e5c859c0b46989667d4b68de9978c.png" alt="No display">
+                                </a>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarScroll">
+                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                    style="--bs-scroll-height: 250px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">ABOUT US</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">FACILITIES</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle hvr" href="#"
+                                            id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            BLOG
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">BLOG</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">BLOG STANDARD</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">BLOG DETAILS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            PAGES
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">TEAM</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">GALLERY</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">PRICING PLAN</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active">CONTACT US</a>
+                                    </li>
+                                </ul>
+                                <!-- phone no and join membership -->
+                                <!-- <div class="icon">
+                                    <i><img src="assets/img/icons/phone-white.svg" alt=""></i>
+                                </div> -->
+                                <div class="line-cnt">
+                                    <span><i class="fa-solid fa-phone"></i></span>
+                                    <a href="tel:12025550140">+91-7090057755</a>
+                                </div>
+
+
+                                <button id="navbtn" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Join Membership
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">MEMBERSHIP</h5> <br>
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>Come And Be A Member Of Our Club.</h1>
+
+
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <label for="firstname" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" id="firstname"
+                                                            placeholder="Your First Name">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="lastname" class="form-label">Last Name</label>
+                                                        <input type="text" class="form-control" id="lastname"
+                                                            placeholder="Your last Name">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4"
+                                                            placeholder="Your Email Address">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="inputPassword4"
+                                                            placeholder="Password" maxlength="8">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress" class="form-label">Address</label>
+                                                        <input type="text" class="form-control" id="inputAddress"
+                                                            placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress2" class="form-label">Address 2</label>
+                                                        <input type="text" class="form-control" id="inputAddress2"
+                                                            placeholder="Apartment, studio, or floor">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputCity" class="form-label">City</label>
+                                                        <input type="text" class="form-control" id="inputCity"
+                                                            placeholder="City">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputState" class="form-label">State</label>
+                                                        <select id="inputState" class="form-select">
+                                                            <option selected>Choose...</option>
+                                                            <option>Trivandrum</option>
+                                                            <option>Ernakulam</option>
+                                                            <option>Kozhikode</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputZip" class="form-label">Zip Code</label>
+                                                        <input type="text" class="form-control" id="inputZip"
+                                                            placeholder="Postal code">
+                                                    </div><br>
+                                                    <div class="col-md-6">
+                                                        <label for="inputph" class="form-label">Phone Number</label>
+                                                        <input type="text" class="form-control" id="inputph"
+                                                            placeholder="Phone Number">
+                                                    </div><br>
+
+                                                    <div class="col-md-8">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Check me out
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Join Now</button>
+                                                        <button type="reset" class="btn btn-primary">Reset</button>
+
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div><br><br>
+            <!-- carousel -->
+            <div class="carousel">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-8 col-sm-12">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./golf images/g2.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption ">
+                                            <h1>Ben Hogan</h1>
+                                            <h2>“The most important shot in golf is the next one.”</h2>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./golf images/g3.jpg" class="d-block w-100" alt="No display">
+                                        <div class="carousel-caption">
+                                            <h1 >Chris Wilson</h1>
+                                            <h2>“The first thing golf teaches is humility. The second, empathy, and the third, patience.”</h2>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./golf images/g4.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption">
+                                            <h1>Pelham Grenville Wodehouse</h1>
+                                            <h2>“To find a man’s true character, play golf with him.”</h2>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./golf images/g5.webp" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption">
+                                            <h1>Johnny Miller</h1>
+                                            <h2> “Golf is 90% inspiration and 10% perspiration.”</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div><br><br><br><br>
+
+            <div class="container">
+                <div class="empty">
+                   <div class="row">
+                        <div class="col-lg-12 col-md-8 col-sm-4">
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">ABOUT
+                                    GOLF</a>
+
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                    aria-controls="multiCollapseExample2">GOLF COURSE</button>
+
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                                    aria-controls="multiCollapseExample3">SCORING</button>
+
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample4" aria-expanded="false"
+                                    aria-controls="multiCollapseExample4">SCORING TERMS and VALUES</button>
+
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample5" aria-expanded="false"
+                                    aria-controls="multiCollapseExample5">NATIONAL EVENTS</button>
+
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample6" aria-expanded="false"
+                                    aria-controls="multiCollapseExample6">INTERNATIONAL EVENTS</button>
+                            </p>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                        <div class="cardbtn cardbody">
+                                            <p>
+                                                Golf is a game enjoyed all over the world by both players and fans. It's
+                                                a
+                                                sport that
+                                                requires concentration and precision, and it's enjoyed by professional
+                                                athletes and
+                                                amateurs, both of whom compete throughout the year for titles and
+                                                prizes.
+                                                Many people
+                                                consider golf an easy game to learn, but not everyone is actually good
+                                                at
+                                                golf. The
+                                                basics of golf include hitting a ball with a club, trying hard to hit
+                                                the
+                                                ball directly
+                                                into the hole on the green.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                        <div class="cardbtn cardbody">
+                                            <p>
+                                                Golf is played on a course, and the green area of the course is known as
+                                                the
+                                                fairway.
+                                                The typical course consists of 18 holes, although golfers can play a
+                                                9-hole
+                                                course
+                                                through twice to play a full game of 18 holes. Golfers begin a play by
+                                                standing at the
+                                                teeing green and aiming the ball towards the putting green, the area
+                                                where
+                                                the flagstick
+                                                and hole are located. The length from the teeing green to the hole
+                                                varies
+                                                depending on
+                                                the course, and it may or may not be seen from the teeing the green.
+                                                Most
+                                                courses have
+                                                holes that are seen from the teeing green, but some angle left or right
+                                                making the
+                                                invisible from the teeing green. <br> <br>
+
+                                                Golf courses use different lengths of turf or grass to increase the
+                                                difficulty of the
+                                                game. On the putting green, the area closest to the hole, the grass will
+                                                be
+                                                short and
+                                                smooth to make it easier to putt into the hold. The course may also
+                                                consist
+                                                of
+                                                intentional hazards such as sand dunes or lakes. If a ball is hit into a
+                                                hazard area, a
+                                                golfer can attempt to make the next swing from the hazard or hit a new
+                                                ball
+                                                in an area
+                                                across from the hazard.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                        <div class="cardbtn cardbody">
+                                            <p>
+                                                The goal is to play as few strokes per round as possible. A golfer's score
+                                                is usually
+                                                expressed as the difference between the player's number of strokes and the
+                                                par score. A
+                                                hole in one (or an "ace") occurs when a golfer sinks his ball into the cup
+                                                with his
+                                                first stroke from the tee. Common scores for a hole also have specific
+                                                terms.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                        <div class="crd crd-body">
+                                            <table class="table table-bordered border-primary table-hover" style="width: 500px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Numeric Term</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">-4</th>
+                                                        <td>Condor</td>
+                                                        <td>Four strokes under par</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">-3</th>
+                                                        <td>Albatross (Double Eagle)</td>
+                                                        <td>Albatross (Double Eagle)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">-2</th>
+                                                        <td>Eagle</td>
+                                                        <td>Two strokes under par</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">-1</th>
+                                                        <td>Birdie</td>
+                                                        <td>One strokes under par</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">E</th>
+                                                        <td>Par</td>
+                                                        <td>Equal to par</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">+1</th>
+                                                        <td>Bogie</td>
+                                                        <td>One stroke over par</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">+2</th>
+                                                        <td>Double bogey</td>
+                                                        <td>Two stroke over par</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">+3</th>
+                                                        <td>Triple bogey</td>
+                                                        <td>Three stroke over par</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample5">
+                                        <div class="crd crd-body">
+                                            <div class="list-group" style="width: 500px;">
+
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-primary">Amateur
+                                                    Golf Championship of India</a>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-secondary">All
+                                                    India Ladies Amateur Championship</a>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-success">All
+                                                    India
+                                                    Seniors Golf Championship</a>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-danger">All
+                                                    India
+                                                    Junior Golf Championship</a>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-warning">All
+                                                    India
+                                                    Junior Golf Championship</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample6">
+                                        <div class="crd crd-body">
+                                            <div class="list-group" style="width: 500px;">
+
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-primary">Amateur
+                                                    The British Open</a>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-secondary">All
+                                                    BMW PGA Championship</a>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-success">All
+                                                    India
+                                                    Dubai World Championship</a>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-danger">All
+                                                    India
+                                                    WGC-HSBC Champions</a>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action list-group-item-warning">All
+                                                    India
+                                                    Barclays Singapore Open</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <!-- about -->
+            <div class="about">
+                <div class="row">
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+
+                        <img src="./golf images/about.jpg" class="card-img" alt="No display">
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <div class="btx-box-body">
+
+                            <div class="abthd">
+                                <h1 class="price">ABOUT GOLF</h1> <br>
+                                <P>A sport synonymous with elites of the society, golf is a symbolism of grandeur and
+                                    elegance.
+                                    Hence a golf course cannot be a part of a mere sports complex ever.</P>
+                                <button><a href="#">View More--></a></button>
+                            </div>
+
+                            <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-left-align">
+                                <h1 class="price">History of STP GOLF CLUB</h1> <br><br>
+
+
+                            </div>
+                            <div class="btx-item js-item-text btx-text btx-left-align btx-primary-font">
+                                <div class="btx-row" style="margin:0 -30px;">
+                                    <div class="btx-text-content btx-col-12" style="padding:0 30px;">
+                                        <div class="btx-text-content-inner">
+                                            <span style="color: rgb(48, 48, 48);">A sport synonymous with elites of the
+                                                society, golf is a symbolism of grandeur and elegance. Hence a golf
+                                                course cannot be a part of a mere sports complex ever. With a proud
+                                                legacy as the oldest Golf course outside the British Isles, <span
+                                                    style="color:red;font-weight: bold;">STP GOLF CLUB</span> is a
+                                                landmark of the city’s history that represents the class and poise of
+                                                Kochi's crème de la crème.</span><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btx-item js-item-space btx-space" style="height:10px;"></div>
+                            <div
+                                class="btx-item js-item-button btx-button btx-button--border btx-left-align btx-button-size--medium btx-button-hover--brand btx-button-color--brand">
+                                <a href="#" style="text-decoration: none;">
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- <div class="col-lg-3 col-md-9 col-sm-12">
+                        <div class="btx-box-body"
+                            style="padding-top:0px; padding-right:10%; padding-left:20%; padding-bottom:80px;">
+                            <div
+                                class="btx-item js-item-heading btx-heading btx-heading--plain btx-left-align ">
+                                    <h1 class="price">MEMBERSHIP</h1> <br><br>
+                            </div>
+                            <div class="btx-item js-item-text btx-text btx-left-align btx-primary-font">
+                                <div class="btx-row" style="margin:0 -30px;">
+                                    <div class="btx-text-content btx-col-12" style="padding:0 30px;">
+                                        <div class="btx-text-content-inner">
+                                            <span style="color: rgb(48, 48, 48);">As a member of STP, you get access to
+                                                an incredible array of facilities and get to play golf without paying
+                                                green fees. Enjoy exclusive access to multiple restaurants, bars, two
+                                                world class gyms, golf practice facilities, yoga classes and more. STP
+                                                is also an incredible and private place to be the perfect host by
+                                                bringing guests to the restaurants & bars, hosting a private party at
+                                                one of our many banquet locations, to booking a top class room for your
+                                                outstation guests in the middle of the city amidst a lush, green golf
+                                                course.
+                                            </span><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btx-item js-item-space btx-space" style="height:10px;"></div>
+                            <div
+                                class="btx-item js-item-button btx-button btx-button--border btx-left-align btx-button-size--medium btx-button-hover--brand btx-button-color--brand">
+                                <a href="http://bgc1876.com/stage-new/elements__trashed/history-of-bgc/" target="_self"
+                                    class="btnx" style="border-radius:40px; border-width:1px;">
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div><br><br><br><br>
+
+
+            <!-- new facilities -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="price">Discover Our Club Facilities</h1> <br><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container flip">
+                <div class="row">
+
+                    <div class="col-lg-4 flip1">
+                        <div class="cardone">
+                            <div class="face front-face"><img src="./golf images/club-4.jpg" alt="No display">
+                            </div>
+                            <div class="face back-face">
+                                <h1>BEST GROUNDS</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 flip1">
+                        <div class="cardone">
+                            <div class="face front-face"><img src="./golf images/cd2.webp" alt="Avatar" class="profile">
+                            </div>
+                            <div class="face back-face">
+                                <h1>BEST TRAINERS</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 flip1">
+                        <div class="cardone">
+                            <div class="face front-face"><img src="./golf images/cd3.webp" alt="Avatar" class="profile">
+                            </div>
+                            <div class="face back-face">
+                                <h1>BOOK EXPERT</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-4 flip1">
+                        <div class="cardone">
+                            <div class="face front-face"><img src="./golf images/res.jpg" alt="No display">
+                            </div>
+                            <div class="face back-face">
+                                <h1>RESTAURANT</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 flip1">
+                        <div class="cardone">
+                            <div class="face front-face"><img src="./golf images/pool.jpg" alt="Avatar" class="profile">
+                            </div>
+                            <div class="face back-face">
+                                <h1>SWIMMING POOL</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 flip1">
+                        <div class="cardone">
+                            <div class="face front-face"><img src="./golf images/party.jpg" alt="Avatar"
+                                    class="profile">
+                            </div>
+                            <div class="face back-face">
+                                <h1>PARTY CENTER</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="empty1" style="width: 100%;height: 150px;background-color: white">
+
+            </div>
+            <!-- health benefits -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="health">
+                            <h1>Health Benefits of Playing Golf </h1>
+                            <hr>
+                            <div class="accordion accordion" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne"
+                                            style="font-weight: bold;">
+                                            Heart health
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Any form of physical exercise helps get the blood
+                                            pumping to
+                                            your heart. Walking, carrying your bag and swinging all increase your heart
+                                            rate and
+                                            blood flow. Your risk of a stroke and diabetes are reduced, and there can be
+                                            positive effects on reducing blood pressure and harmful cholesterol,
+                                            especially if
+                                            combined with a healthy diet and lifestyle. The Norwegian Golf Federation
+                                            (NGF)
+                                            found that during an 18-hole round, a player will have an average heart rate
+                                            of 100
+                                            beats per minute, over a two to five hour period.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo"
+                                            style="font-weight: bold;">
+                                            Brain stimulation
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Regular daily walking strengthens the brain’s memory
+                                            circuits. Clive Ballard, director of research at the Alzheimer’s Society,
+                                            says:
+                                            'Whether it is going for a jog or walking the golf course, keeping
+                                            physically active
+                                            is a great way to keep your heart and your brain healthy. By keeping active
+                                            you make
+                                            sure your brain has a good, strong blood supply, which is essential to help
+                                            it
+                                            function better now and in future.”</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree"
+                                            style="font-weight: bold;">
+                                            Weight loss
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">The golden number of steps per day needed for weight
+                                            loss is
+                                            10,000. An 18-hole round easily exceeds this recommended number, especially
+                                            when you
+                                            walk and do not use a golf cart. The Norwegian Golf Federation (NGF) found
+                                            that
+                                            recent research projects (referring to those in Norway, Japan, Germany, the
+                                            US and
+                                            Sweden) revealed that a male golfer burns around 2,500 kCal during an
+                                            18-hole round,
+                                            and female players burn approximately 1,500 kCal (read 9 Holes for Better
+                                            Health –
+                                            in Norwegian).</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour"
+                                            style="font-weight: bold;">
+                                            Reduces stress
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">The golden number of steps per day needed for weight
+                                            loss is
+                                            10,000. An 18-hole round easily exceeds this recommended number, especially
+                                            when you
+                                            walk and do not use a golf cart. The Norwegian Golf Federation (NGF) found
+                                            that
+                                            recent research projects (referring to those in Norway, Japan, Germany, the
+                                            US and
+                                            Sweden) revealed that a male golfer burns around 2,500 kCal during an
+                                            18-hole round,
+                                            and female players burn approximately 1,500 kCal (read 9 Holes for Better
+                                            Health –
+                                            in Norwegian).</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                            aria-expanded="false" aria-controls="flush-collapseFive"
+                                            style="font-weight: bold;">
+                                            Improved sleep
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Exercise and fresh air are a powerful combination
+                                            for
+                                            improved sleep. Walking the course will give you a good workout. Regular
+                                            exercise
+                                            helps you sleep faster and remain in a deep sleep for longer. Sleep helps
+                                            your
+                                            muscles rest and repair.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                            aria-expanded="false" aria-controls="flush-collapseSix"
+                                            style="font-weight: bold;">
+                                            Low injury
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Golf is a low-impact activity in the sense that one
+                                            walks on
+                                            a soft, gently rolling surface. More mature players find this attractive as
+                                            they can
+                                            burn calories with a low risk of injury.</div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="empty1" style="width: 100%;height: 90px;background-color: white">
+
+            </div>
+
+            <!-- pricing -->
+
+            <div class="container">
+                <div class="row">
+                    <!-- <h1 style="box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;text-shadow: 0 0 4px #d3c71c;"
+                        class="price">PRICING PLAN</h1> -->
+                    <h1 class="price">Get The Best Plan For Playing...</h1> <br><br>
+
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Standard</h1>
+                            </div>
+                            <div class="save">
+                                <p>Save 10%</p>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Rs.3000/Per Month</h5>
+                                <hr>
+                                <ul>
+                                    <li>Lesson and Practice Plan</li><br>
+                                    <li>60 Minute Session</li><br>
+                                    <li>Premium Range Balls</li><br>
+                                    <li>Free Swimmingpool</li><br>
+                                    <li>2 Video Camplaigns</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Get Membership</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Luxury</h1>
+                                <div class="save1">
+                                    <p>Recommended</p>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Rs.5000/Per Month</h5>
+                                <hr>
+                                <ul>
+                                    <li>Lesson and Practice Plan</li><br>
+                                    <li>90 Minute Session</li><br>
+                                    <li>Premium Range Balls</li><br>
+                                    <li>Free Swimmingpool</li><br>
+                                    <li>4 Video Camplaigns</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Get Membership</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Premium</h1>
+                                <div class="save">
+                                    <p>Save 20%</p>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Rs.8000/Per Month</h5>
+                                <hr>
+                                <ul>
+                                    <li>Lesson and Practice Plan</li><br>
+                                    <li>150 Minute Session</li><br>
+                                    <li>Premium Range Balls</li><br>
+                                    <li>Free Swimmingpool</li><br>
+                                    <li>4 Video Camplaigns</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary">Get Membership</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty1" style="width: 100%;height: 150px;background-color: white;">
+
+            </div>
+
+
+            <!-- footer -->
+
+            <div class="container1">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-8 col-sm-12">
+                        <div class="social">
+                            <div>
+                                <h1>Find Here:</h1><br><br><br>
+                            </div>
+                            <ul type="none">
+                                <li><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li><br>
+                                <li><a href="https://www.instagram.com/"><i
+                                            class="fa-brands fa-instagram fa-2x"></i></a></li><br>
+                                <li><a href="https://twitter.com/?lang=en-in"><i
+                                            class="fa-brands fa-twitter fa-2x"></i></a></li><br>
+                                <li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                                </li><br>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-8 col-sm-12">
+                        <div class="ourclub">
+                            <h1>Our Club</h1>
+                            <ul type="none">
+                                <li><a href="#">Golf Simulator</a></li><br>
+                                <li><a href="#">Swimming Pool</a></li><br>
+                                <li><a href="#">Gold Academy</a></li><br>
+                                <li><a href="#">Fitness Center</a></li><br>
+                                <li><a href="#">Golfer Event</a></li><br>
+                                <li><a href="#">Membership</a></li><br>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-8 col-sm-12">
+                        <div class="hrs">
+                            <h1>Hours of Open</h1>
+                            <ul type="none">
+                                <li>Mon-Wed: 6:00am – 8:00pm</li><br>
+                                <li>Thurs-Fri: 6:30am – 7:30pm</li><br>
+                                <li>Sat-Mon: 6:00am – 8:00pm</li><br>
+                                <li>Sat-Wed: 6:30am – 7:30pm</li><br>
+                                <li>Sunday : Closed</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-8 col-sm-12">
+                        <div class="number">
+                            <div class="num-icon"><br>
+                                <h1 style="color: white;font-size: 25px;">
+                                    <i class="fa-solid fa-phone fa-1px" style="color: white;"></i>
+                                    <a style="font-size: 16px;" href="tel:7090057755">+917090057755</a>
+
+                                </h1>
+
+                            </div>
+                            <!-- <div class="phone">
+                                <a href="tel:7090057755">+917090057755</a>
+                                <a href="tel:8921132245">+918921132245</a>
+                            </div> -->
+                        </div><br>
+                        <div class="office-mail">
+                            <div class="mail-icon">
+                                <i class="far fa-envelope " style="color: white;font-size: 25px;"> <a
+                                        style="font-size: 19px;" href="tell:info@example.com">Surajtp90@gmail.com</a>
+                                </i>
+                            </div>
+                            <!-- <div class="email">
+                                <a href="tell:info@example.com"><span class="__cf_email__"
+                                        data-cfemail="274e49414867425f464a574b420944484a">Surajtp90@gmail.com</span></a>
+                                <a href="tell:info@support.com"><span class="__cf_email__"
+                                        data-cfemail="442d2a222b04373134342b36306a272b29">Surajtp10@gmail.com</span></a>
+                            </div> -->
+                        </div><br>
+                        <div class="address">
+                            <div class="address-icon">
+                                <h1>
+                                    <i class="fas fa-map-marker-alt" style="color: white;font-size: 25px;"></i>
+                                    <a style="font-size: 16px;" href="tel:7090057755">168/170, Avenue
+                                        01,Kochi,Ernakulam</a>
+                                </h1>
+                            </div>
+                            <!-- <p style="color: white;">168/170, Avenue 01,Kochi,Ernakulam</p> -->
+                        </div>
+                    </div>
+                </div>
+                <hr style="color: white;">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-sm-12">
+                        <h6 style="color: white;  margin-left: 38px;
+">Copyright 2022 STP Golf Lab | Designed by SURAJ T P</h6>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-1">
+                        <ul class="footer-bottom-menu">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <!-- <li><a href="#">Terms of Use</a></li> -->
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-8 col-sm-12">
+                        <ul class="footer-bottom-menu">
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+
+            <!--  -->
+        </div>
+    </div>
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a><br>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a><br>
+        <a href="#" class="google"><i class="fa fa-google"></i></a><br>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a><br>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+</body>
+
+</html>
